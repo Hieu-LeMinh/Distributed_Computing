@@ -22,7 +22,7 @@ def PlotVisual(G1):
 	snap.PlotKCoreEdges(G1, "Facebook", "Facebook - k-core edges")
 
 if __name__ == "__main__":
-	G1 = snap.LoadEdgeList(snap.PUNGraph, "musae_facebook_edges.csv", 0, 1, ',')
+	G1 = snap.LoadEdgeList(snap.PUNGraph, "/home/hieu/data/ttpt/project/facebook_large/musae_facebook_edges.csv", 0, 1, ',')
 
 	# PlotVisual(G1)
 	GraphVisualization(G1)

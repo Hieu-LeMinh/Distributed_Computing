@@ -1,5 +1,6 @@
 from pyspark import *
 from graphframes import *
+from pyspark.sql import SQLContext, SparkSession
 
 spark = SparkSession.builder.appName("Test2").getOrCreate()
 nodes_df = spark.read.csv("/home/hieu/data/ttpt/project/facebook_large/musae_facebook_target.csv", header = True)

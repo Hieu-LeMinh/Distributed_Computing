@@ -1,7 +1,7 @@
 import snap
 import matplotlib.pyplot as plt
 
-G1 = snap.LoadEdgeList(snap.PUNGraph, "musae_facebook_edges.csv", 0, 1, ',')
+G1 = snap.LoadEdgeList(snap.PUNGraph, "/home/hieu/data/ttpt/project/facebook_large/musae_facebook_edges.csv", 0, 1, ',')
 
 CmtyV = snap.TCnComV()
 modularity = snap.CommunityCNM(G1, CmtyV)
