@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 
 G1 = snap.LoadEdgeList(snap.PUNGraph, "/home/hieu/data/ttpt/project/facebook_large/musae_facebook_edges.csv", 0, 1, ',')
 
+snap.DelSelfEdges(G1)
+
 CmtyV = snap.TCnComV()
 modularity = snap.CommunityCNM(G1, CmtyV)
 count = 0

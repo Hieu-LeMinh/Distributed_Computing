@@ -8,7 +8,8 @@ from pyspark.ml.clustering import KMeans
 def compute_adjacency_matrix(data="/home/hieu/data/ttpt/project/facebook_large/musae_facebook_edges.csv"):
 
     G1 = snap.LoadEdgeList(snap.PUNGraph, data, 0, 1, ',')
-
+    snap.DelSelfEdges(G1)
+    
     n = G1.GetNodes()
     A = np.zeros(shape=(n,n))
 
