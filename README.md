@@ -1,6 +1,6 @@
 # Distributed_Computing
 
-Analysis of facebook large page-page networks
+Analysis of Facebook Large Page-Page networks
 
 Dataset: http://snap.stanford.edu/data/facebook-large-page-page-network.html
 
@@ -15,3 +15,4 @@ Ensure you meet the following requirements:
 * You are using a Ubuntu/Debian machine. Windows is not currently supported.
 * You have a basic understanding of Spectral Clustering, K-means and Spark(Pyspark) Framework
 
+Please see details in attached final_report.txt file
