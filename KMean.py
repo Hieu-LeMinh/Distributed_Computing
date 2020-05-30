@@ -45,7 +45,7 @@ class KMean():
         svd.fit(data_matix)
         return svd
 
-    def load_node_features(self, data_path='./dataset/musae_facebook_features.json'):
+    def load_node_features(self, data_path='/home/hieu/data/ttpt/project/facebook_large/musae_facebook_features.json'):
         print("Loading data...")
         with open(data_path) as f:
             data = json.load(f)
@@ -58,7 +58,7 @@ class KMean():
 
         return featureMatrix
     
-    def compute_L_matrix(self, data='./dataset/musae_facebook_edges.csv'):
+    def compute_L_matrix(self, data='/home/hieu/data/ttpt/project/facebook_large/musae_facebook_features.json'):
         G1 = snap.LoadEdgeList(snap.PUNGraph, data, 0, 1, ',')
 
         n = G1.GetNodes()
